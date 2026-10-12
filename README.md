@@ -1,6 +1,3 @@
-# ad-rbac-home-lab
-Home lab building an Active Directory domain with role-based access control, Group Policy hardening, and Windows event log auditing.
-
 # Home Lab: Active Directory, RBAC, Group Policy & Audit Logging
 
 A single-domain Active Directory lab built to practice identity and access management from both the admin and the detection side: design role-based access, enforce a security baseline, then verify it with the Windows event log.
@@ -30,8 +27,8 @@ A single-domain Active Directory lab built to practice identity and access manag
 
 Verified with **Effective Access** on each folder. Example: `mjones` (in `Grp-HR-read`) gets read-only on HR (traverse, list, read) and no access to IT or Finance. Denied results are shown as well as allowed ones.
 
-![HR effective access](screenshots/hr-effective-access-mjones.png)
-![IT effective access](screenshots/it-effective-access-mjones.png)
+![HR effective access](https://drive.google.com/file/d/1D3wCA8LPbSN8FCRSX6t8cHPcD-iurH3K/view?usp=sharing)
+![IT effective access](https://drive.google.com/file/d/1JWpkNEQfuZgePTbQyHEyhdymdzCKh1Yj/view?usp=sharing)
 
 ## Security baseline (Group Policy)
 - Password: minimum length, complexity enabled, maximum age set
@@ -53,10 +50,10 @@ I deliberately generated bad logons, a lockout, an account creation, and a group
 
 Takeaway: repeated bad passwords produced 4625 events, the lockout policy stopped the guessing after the threshold (4740), and later attempts were refused. Group membership changes are recorded with who made them, which is how access changes get reviewed.
 
-![4625](screenshots/event-4625.png)
-![4740](screenshots/event-4740.png)
-![4728](screenshots/event-4728.png)
-![4729](screenshots/event-4729.png)
+![4625](https://drive.google.com/file/d/1g-WeggSWSPwnonxabQKyskl4v62j5Epk/view?usp=sharing)
+![4740](https://drive.google.com/file/d/1Di97HXD9oV8CT7Bkhd09ECDiIltquvYJ/view?usp=sharing)
+![4728](https://drive.google.com/file/d/11xlXmRz3X6ElfYwZFoMxIwkrlRoavcA3/view?usp=sharing)
+![4729](https://drive.google.com/file/d/1mps_i2S2_U5bxAcHCRvS5vhtdj7p9Bbj/view?usp=sharing)
 
 ## Limitations
 - One VM only: DC01 also hosts the shares. Real environments separate file servers from domain controllers.
