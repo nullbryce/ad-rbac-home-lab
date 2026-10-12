@@ -27,8 +27,8 @@ A single-domain Active Directory lab built to practice identity and access manag
 
 Verified with **Effective Access** on each folder. Example: `mjones` (in `Grp-HR-read`) gets read-only on HR (traverse, list, read) and no access to IT or Finance. Denied results are shown as well as allowed ones.
 
-![HR effective access](https://drive.google.com/file/d/1D3wCA8LPbSN8FCRSX6t8cHPcD-iurH3K/view?usp=sharing)
-![IT effective access](https://drive.google.com/file/d/1JWpkNEQfuZgePTbQyHEyhdymdzCKh1Yj/view?usp=sharing)
+![HR effective access]( https://drive.google.com/file/d/1D3wCA8LPbSN8FCRSX6t8cHPcD-iurH3K/view?usp=sharing )
+![IT effective access]( https://drive.google.com/file/d/1JWpkNEQfuZgePTbQyHEyhdymdzCKh1Yj/view?usp=sharing )
 
 ## Security baseline (Group Policy)
 - Password: minimum length, complexity enabled, maximum age set
